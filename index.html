@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    select, button {
+        padding: 10px;
+        margin: 10px 0;
+    }
+    #output {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+</style>
+</head>
+<body>
+    <h1>Mobile Brand and Model Filter</h1>
+
+    <!-- Dropdown for mobile brands -->
+    <label for="brand">Choose a Brand:</label>
+    <select id="brand" onchange="updateModels()">
+        <option value="">Select Brand</option>
+        <option value="Samsung">Samsung</option>
+        <option value="Apple">Apple</option>
+        <option value="OnePlus">OnePlus</option>
+    </select>
+
+    <!-- Dropdown for mobile models -->
+    <label for="model">Choose a Model:</label>
+    <select id="model">
+        <option value="">Select Model</option>
+    </select>
+
+    <!-- Search button -->
+    <button onclick="showSelection()">Search</button>
+
+    <!-- Output will be displayed here -->
+    <div id="output"></div>
+  <script src="app.js"></script>
+</body>
+</html> 
